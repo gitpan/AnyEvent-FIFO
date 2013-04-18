@@ -1,25 +1,41 @@
 ---
 abstract: 'Simple FIFO Callback Dispatch'
 author:
-  - 'This module is basically a generalisation of the FIFO queue used in AnyEvent::HTTP by Marc Lehman. '
+  - 'Daisuke Maki.'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.95'
-license: unknown
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.0.53, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: AnyEvent-FIFO
 no_index:
   directory:
-    - inc
     - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  AnyEvent::FIFO:
+    file: lib/AnyEvent/FIFO.pm
+    version: 0.00003
 requires:
   AnyEvent: 0
 resources:
+  bugtracker: https://github.com/lestrrat/AnyEvent-FIFO/issues
+  homepage: https://github.com/lestrrat/AnyEvent-FIFO
   repository: git://github.com/lestrrat/AnyEvent-FIFO.git
-version: 0.00002
+version: 0.00003
+x_contributors:
+  - 'kolya <mar.kolya@gmail.com>'
+  - 'Daisuke Maki <lestrrat+github@gmail.com>'
